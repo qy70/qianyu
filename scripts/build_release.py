@@ -46,6 +46,17 @@ def selected_files(root: Path):
             yield path
 
 
+def distribution_bytes(root: Path, name: str) -> bytes:
+    """读取发行根目录文件。手册在仓库里与配图同目录，打进 ZIP 后位于包根，配图仍在程序/下。"""
+    content = (root / "templates" / "distribution" / name).read_bytes()
+    if name == "操作手册.md":
+        content = content.replace(
+            "](manual-assets/模型设置.png)".encode(),
+            "](程序/templates/distribution/manual-assets/模型设置.png)".encode(),
+        )
+    return content
+
+
 def build(root: Path = ROOT, output: Path | None = None) -> Path:
     root = root.resolve()
     output = output or release_path(root)
@@ -66,7 +77,7 @@ def build(root: Path = ROOT, output: Path | None = None) -> Path:
             manifest["files"]["程序/" + relative] = hashlib.sha256(content).hexdigest()
             archive.writestr("千鱼纯净版/程序/" + relative, content)
         for name in DISTRIBUTION_FILES:
-            content = (root / "templates" / "distribution" / name).read_bytes()
+            content = distribution_bytes(root, name)
             manifest["files"][name] = hashlib.sha256(content).hexdigest()
             archive.writestr("千鱼纯净版/" + name, content)
         archive.writestr("千鱼纯净版/release-manifest.json", json.dumps(manifest, ensure_ascii=False, indent=2))

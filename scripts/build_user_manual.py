@@ -62,7 +62,11 @@ def main():
         elif line.startswith("!["):
             match = re.match(r"!\[(.*?)\]\((.*?)\)", line)
             label, relative = match.groups()
-            path = ROOT / Path(relative).relative_to("程序")
+            candidate = Path(relative)
+            if candidate.parts[:1] == ("程序",):
+                path = ROOT / candidate.relative_to("程序")
+            else:
+                path = source.parent / candidate
             width, height = ImageReader(str(path)).getSize()
             scaled_width = 445
             story.append(Image(str(path), width=scaled_width, height=height * scaled_width / width))
