@@ -6,6 +6,26 @@ Qianyu is a Windows desktop application for running a customizable QQ chatbot. I
 
 This repository contains the **0.3.14 clean source snapshot**. The project is an early Windows development preview, not a turnkey hosted service. Its interface and bundled user documentation are currently in Chinese.
 
+## Screenshots
+
+These show the default 0.3.14 management UI before login or API key setup.
+
+![Home](docs/screenshots/home.png)
+
+*我的大肥鱼 / Home*
+
+![Connection settings](docs/screenshots/connect.png)
+
+*连接设置 / Connection settings*
+
+![Persona and memory](docs/screenshots/persona.png)
+
+*人格与记忆 / Persona and memory*
+
+![Library](docs/screenshots/library.png)
+
+*我的资料库 / Library*
+
 ## What it does
 
 - Runs a desktop management interface for configuring the model, QQ connection, chat scope, and bot instance.

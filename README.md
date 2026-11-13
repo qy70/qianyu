@@ -8,6 +8,26 @@ Windows 上的 QQ 桌面机器人。它基于 [MaiBot](https://github.com/Mai-wi
 
 > 本仓库只发布通用源码和模板。安装器 EXE 目前是未签名预览版（`unsigned_preview`），开源不能替代 Windows 代码签名，下载或运行时仍可能出现 SmartScreen 提示。
 
+## 界面截图
+
+下面是 0.3.14 管理界面的默认样子，拍摄于登录和填写 API 密钥之前。
+
+![我的大肥鱼](docs/screenshots/home.png)
+
+*我的大肥鱼 / Home*
+
+![连接设置](docs/screenshots/connect.png)
+
+*连接设置 / Connection settings*
+
+![人格与记忆](docs/screenshots/persona.png)
+
+*人格与记忆 / Persona and memory*
+
+![我的资料库](docs/screenshots/library.png)
+
+*我的资料库 / Library*
+
 ## 它是怎么工作的
 
 千鱼把三件事叠在一起，变成一个可安装的 Windows 桌面应用：
