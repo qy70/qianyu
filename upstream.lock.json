@@ -1,0 +1,102 @@
+{
+  "components": [
+    {
+      "name": "MaiBot",
+      "path": "engine/MaiBot",
+      "source": "https://github.com/Mai-with-u/MaiBot",
+      "commit": "c6429547af711555e3d4d1b8d04b413572cb616c"
+    },
+    {
+      "name": "QQ Connector",
+      "path": "components/qq-connector",
+      "source": "https://github.com/Mai-with-u/MaiBot-SnowLuma-Adapter",
+      "commit": "9b409b1920291f5f12f31c68b0b41604ea40a78a"
+    }
+  ],
+  "python": "3.12.x",
+  "platform": "Windows x64",
+  "local_modifications": [
+    {
+      "component": "MaiBot",
+      "since": "fatfish 0.3.4 (2026-11-04)",
+      "purpose": "0–1 group reply frequency UI; endpoint 1 replies to each eligible incoming group message sequentially using the native Replyer.",
+      "files": [
+        "src/config/config.py",
+        "src/config/official_configs.py",
+        "src/maisaka/runtime.py",
+        "src/maisaka/turn_trigger/scheduler.py",
+        "src/maisaka/reasoning_engine.py"
+      ],
+      "config_version": "8.15.69"
+    },
+    {
+      "component": "MaiBot",
+      "since": "千羽 0.3.6 本机话题补丁 (2026-11-04, 未更新分享包)",
+      "purpose": "Opt-in per-instance topic reply policy: promptly decide each turn by semantic relevance, keyword calls and rare unrelated opportunities; no count-based backlog or idle backoff; preserve native tools and 0/1 endpoints.",
+      "files": [
+        "src/maisaka/turn_trigger/topic_policy.py",
+        "src/maisaka/turn_trigger/scheduler.py",
+        "src/maisaka/runtime.py",
+        "src/maisaka/reasoning_engine.py",
+        "src/maisaka/chat_loop_service.py"
+      ],
+      "activation": "Instances with social/topic-reply.json enabled=true; fatfish 0.3.7 creates this from a common template for new instances and preserves existing settings.",
+      "released_in": "千羽 0.3.7 纯净版"
+    },
+    {
+      "component": "MaiBot",
+      "since": "千羽 0.3.8 本机修订 (2026-11-04)",
+      "purpose": "Separate direct calls, active topic continuation and exact new-topic probability; semantic reply/skip/end admission and explicit topic lifecycle; 0 and 1 no longer mute all or reply to every message.",
+      "files": [
+        "src/maisaka/turn_trigger/topic_policy.py",
+        "src/maisaka/runtime.py",
+        "src/maisaka/reasoning_engine.py"
+      ],
+      "release_scope": "local client only; existing 0.3.7 ZIP and manual remain unchanged"
+    },
+    {
+      "component": "MaiBot",
+      "since": "千羽 0.3.9 本机修订 (2026-11-04)",
+      "purpose": "Three-message rolling follow-up window: reset from the matching incoming message, replace rather than add remaining slots, include queued subsequent messages and stop topic classification after three misses.",
+      "files": [
+        "src/maisaka/turn_trigger/topic_policy.py",
+        "src/maisaka/runtime.py",
+        "src/maisaka/reasoning_engine.py"
+      ],
+      "release_scope": "local client only; existing 0.3.7 ZIP and manual remain unchanged"
+    },
+    {
+      "component": "MaiBot",
+      "since": "千羽 0.3.10 本机修订 (2026-11-05)",
+      "purpose": "Keep the three-message follow-up window after a complete answer; separate answer completeness from explicit conversation closure; classify implicit and elliptical follow-ups using the actual previous question and sent reply.",
+      "files": [
+        "src/maisaka/turn_trigger/topic_policy.py",
+        "src/maisaka/runtime.py",
+        "src/maisaka/reasoning_engine.py",
+        "src/maisaka/builtin_tool/reply.py"
+      ],
+      "release_scope": "local client only; existing 0.3.7 ZIP and manual remain unchanged"
+    },
+    {
+      "component": "MaiBot",
+      "since": "千鱼 0.3.14 (2026-11-05)",
+      "purpose": "Evidence-based fish identity in person memory, persistent three-reply topic guard, partial-delivery accounting, and account-scoped group/private recent and long-term recall. Preserve native databases and user profiles.",
+      "files": [
+        "src/maisaka/turn_trigger/topic_policy.py",
+        "src/maisaka/runtime.py",
+        "src/maisaka/reasoning_engine.py",
+        "src/maisaka/builtin_tool/reply.py",
+        "src/maisaka/memory/person_profile.py",
+        "src/maisaka/builtin_tool/query_person_profile.py",
+        "src/maisaka/builtin_tool/query_memory.py",
+        "src/maisaka/memory/shared.py"
+      ],
+      "owned_extensions": [
+        "fatfish/fish_identity.py",
+        "fatfish/shared_memory.py"
+      ],
+      "activation": "Ordinary group topic guard for confirmed identities; shared recall when memory_enabled=true and shared_memory_enabled=true.",
+      "release_scope": "0.3.14 clean release and current desktop; local simulation only, no real QQ/model acceptance."
+    }
+  ]
+}

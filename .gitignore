@@ -1,0 +1,46 @@
+# Personal / runtime — never publish
+instances/
+.runtime/
+.external/
+.tools/
+.venv/
+venv/
+env/
+backup/
+备份/
+*升级备份*/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Build outputs
+dist/
+build/
+*.exe
+*.zip
+*.7z
