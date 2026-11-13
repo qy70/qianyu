@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "style_files": {
+    "dialogue-distill.md": "d14c371afb6f63871a64ba686ab1b413d239bb3c236a58bb4bf57cda06d68cde",
+    "examples.jsonl": "b8b14149c67162ad2c3683e8f48933afdc03b3b9ad52d8ded2e43d11dc1f61fb",
+    "Humanizer-zh-LICENSE.txt": "8f846424de8cd436ab865890f4831ef15a9889f31e336d106817cbcffef2d496",
+    "manifest.json": "b96689fbe2f78582100e51501f2cc75b39a1025e09c802960752d49a6e2cd449",
+    "natural-chat.md": "0921ea93be676101fdfe9df24b5b1635c92f3e830dd1a179a22ecb67f5f6b54a",
+    "persona.md": "5642c55a344ab11a1c8339690dbeb8eeb75befcbbe47085fb41fb9d27259c2aa",
+    "reply-style.md": "8a30c7e20e17fc39afe419fdd62bd9f8fdfc42b138772e89d561bba7ed35e6d6",
+    "sources.md": "87a946e98ce09044deed3a8d8aaaa62d66475e68a767d629cf4ec5cef062f9e4"
+  },
+  "identity_sha256": [
+    "2231e72a25d5a1f86e7d5b727a94f0ef0a9de5c1b1e09ae81711dd4ce80014f7",
+    "2704a087b52ea832b616f30c2e0bf196e123ca33a13096b96717d2aac8003341"
+  ],
+  "default_nicknames": [
+    "千羽",
+    "千鱼"
+  ],
+  "factory_values": {
+    "PersonalityConfig.selected_profile": [
+      "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126"
+    ],
+    "PersonalityConfig.personality": [
+      "cea16eddb5ea35b8078509ff03d154d4bea0d20f908a7a51acf5035145d0d9ca"
+    ],
+    "PersonalityConfig.behavior_style": [
+      "389d66a20a6c7c641da83c54948aabe9f6debb3fa6545b88a76a817c4108baec"
+    ],
+    "PersonalityConfig.reply_style": [
+      "7ee5ad1dc7cb1c60e8fbe65929f2c1ceac15c9eda505e9dca44035921e65848c",
+      "49980a92d4f644571e28a88240b6c094a0436a359a04f6cd06c1a6744da38ae1",
+      "d8dbb8c741b9639ecd19845190a0fc2e009eb2f1d2229170b1c34bc021afe3ac",
+      "ecb335ae082f29f29c70da385265371ec74e4bf5fe4a0a3eb26662c715a8369d"
+    ],
+    "PersonalityConfig.multiple_reply_style": [
+      "079d0e6977a9b83636242080fab7cdec7b5f5e394dc0ae91490adbbd33ed5c30"
+    ],
+    "PersonalityConfig.multiple_probability": [
+      "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    ],
+    "ChatReplyStyleConfig.group_quote_frequency": [
+      "abcd203832c0bd7db5472f595e9d4c66f440695d3c1bea8c68fc98d72830048e"
+    ],
+    "ChatReplyStyleConfig.private_quote_frequency": [
+      "abcd203832c0bd7db5472f595e9d4c66f440695d3c1bea8c68fc98d72830048e"
+    ],
+    "ChatReplyStyleConfig.group_chat_prompt": [
+      "181d7accb2b5c23714e5a9a78883ae4222c45d445f81fc1f59a0e91b555224ab"
+    ],
+    "ChatReplyStyleConfig.private_chat_prompts": [
+      "27acd3407110eabe368053c2ea31783be1e97b9728d903c90d3285eb0477d7cc"
+    ],
+    "ChatReplyStyleConfig.chat_prompts": [
+      "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    ]
+  },
+  "old_default_aliases": [
+    "肥鱼"
+  ]
+}

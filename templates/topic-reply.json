@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "keywords": [
+    "千羽",
+    "千鱼",
+    "肥鱼",
+    "大肥鱼"
+  ],
+  "probability_semantics": "new_topic_probability"
+}

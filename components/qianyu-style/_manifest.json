@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "id": "fatfish.qianyu-style",
+  "name": "千羽 · 自定义风格与自然对话",
+  "version": "1.1.0",
+  "description": "按当前消息挑选本地风格范例，在回复生成前注入；不额外调用模型，不主动发送消息。",
+  "author": {"name": "Fatfish Project", "url": "http://127.0.0.1:17860"},
+  "urls": {"repository": "http://127.0.0.1:17860", "homepage": "http://127.0.0.1:17860"},
+  "i18n": {"default_locale": "zh-CN", "supported_locales": ["zh-CN"]},
+  "license": "GPL-3.0-or-later",
+  "plugin_type": "extension",
+  "host_application": {"min_version": "1.3.18", "max_version": "1.3.99"},
+  "sdk": {"min_version": "2.19.0", "max_version": "2.98.99"},
+  "capabilities": ["message.get_by_id"]
+}

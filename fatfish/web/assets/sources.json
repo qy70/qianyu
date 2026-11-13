@@ -1,0 +1,44 @@
+{
+  "theme": "大肥鱼 · 蓝色小窝",
+  "source_repository": "https://github.com/EDMOK/blue-fish-archive",
+  "source_commit": "026372aecd83b1b832c12da300406dd3888e0617",
+  "character_original": "上善无形",
+  "secondary_character_design": "ZipZipPipe",
+  "archive_maintainer": "EDMOK / blue-fish-archive",
+  "license": "CC BY-NC-SA 4.0 per the source archive declaration; noncommercial use with attribution and share-alike for adapted artwork. Individual rights remain with the artists.",
+  "assets": [
+    {
+      "asset": "ocean-room.webp",
+      "source": "https://raw.githubusercontent.com/EDMOK/blue-fish-archive/026372aecd83b1b832c12da300406dd3888e0617/media/deepseek-hai-jing-mai-meng.png",
+      "source_page": "https://github.com/EDMOK/blue-fish-archive/blob/026372aecd83b1b832c12da300406dd3888e0617/media/deepseek-hai-jing-mai-meng.png",
+      "source_sha256": "91f9774e73bda27cbef494605a53928bcb57096e7aaf92605311155b87758cf0",
+      "sha256": "975d9fd77c683a0d6d774e705e958c09d0991001dbea587b7eef63215e415ed4",
+      "changes": "Resized for UI and encoded as WebP; no content edits."
+    },
+    {
+      "asset": "fish-wave.webp",
+      "source": "https://raw.githubusercontent.com/EDMOK/blue-fish-archive/026372aecd83b1b832c12da300406dd3888e0617/media/deepseek-jushou-dazhaohu.png",
+      "source_page": "https://github.com/EDMOK/blue-fish-archive/blob/026372aecd83b1b832c12da300406dd3888e0617/media/deepseek-jushou-dazhaohu.png",
+      "source_sha256": "60ba4c4fa5e036b452ffa83fce8901836f1df84c05335fbf321ad068a257e260",
+      "sha256": "2f8af3f24c1b0ea01f8e80ea1c52cd49071310767be26d378f2327c609491283",
+      "changes": "Resized for UI and encoded as WebP; no content edits."
+    },
+    {
+      "asset": "fish-hug.webp",
+      "source": "https://raw.githubusercontent.com/EDMOK/blue-fish-archive/026372aecd83b1b832c12da300406dd3888e0617/art/v1/deepseek-chibi-hug.webp",
+      "source_page": "https://github.com/EDMOK/blue-fish-archive/blob/026372aecd83b1b832c12da300406dd3888e0617/art/v1/deepseek-chibi-hug.webp",
+      "source_sha256": "8657f3aced6419320efc6a5dedb8715d1f7c0a6daa62fc53f0a09334614a8104",
+      "sha256": "2127ae6c2081570be687c8f169370659ee955f1c8333d67d976b695c015c5c21",
+      "changes": "Resized for UI and encoded as WebP; no content edits."
+    },
+    {
+      "asset": "fish-chibi.webp",
+      "source": "https://raw.githubusercontent.com/EDMOK/blue-fish-archive/026372aecd83b1b832c12da300406dd3888e0617/character-art/v1/download/deepseek-chibi.webp",
+      "source_page": "https://github.com/EDMOK/blue-fish-archive/blob/026372aecd83b1b832c12da300406dd3888e0617/character-art/v1/download/deepseek-chibi.webp",
+      "source_sha256": "10d17256459e6bd69b98775a1267441e1e4fe97f59ca0e87632e026b4015aa9e",
+      "sha256": "5571ffdb81de22ab3400168c03951d0943a9b0565fb184a2424e1a6ce9930940",
+      "changes": "Resized for UI and encoded as WebP; no content edits."
+    }
+  ],
+  "icon": "qianyu.ico and qianyu.png are resized/format-converted versions of fish-wave source."
+}
