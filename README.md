@@ -1,3 +1,5 @@
+[中文](README.md) | [English](README.en.md)
+
 # 千鱼（Qianyu）
 
 Windows 上的 QQ 桌面机器人。它基于 [MaiBot](https://github.com/Mai-with-u/MaiBot) 1.3.19 二次开发，用 DeepSeek API 做对话后端，通过官方 NapCat 连接 QQ（运行时按需下载，不把 NapCat 或 QQ 的二进制打进仓库）。
